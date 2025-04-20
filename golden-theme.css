@@ -117,6 +117,16 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Green Theme Button */
+.theme-switcher button.green {
+    background-color: #7ca070; /* Green background */
+    color: black; /* Black text */
+}
+
+.theme-switcher button.green:hover {
+    background-color: #546d4c; /* Darker green on hover */
+}
+
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
     .title {
