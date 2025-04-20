@@ -2,6 +2,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -9,6 +10,22 @@ body {
     background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Soft blue gradient */
     color: #fff;
     text-align: center;
+}
+
+/* Credits */
+.credits {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Title Styles */
+.title {
+    margin: 0 10px; /* Adjust margins for better responsiveness */
+    font-size: 5vw; /* Use viewport width for responsive font size */
+    font-weight: bold; /* Make title bold */
 }
 
 /* Countdown Container Styles */
@@ -44,4 +61,20 @@ h1 {
 .tickcounter:hover {
     background: #4e54c8; /* Dark blue on hover */
     color: white; /* White text on hover */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .title {
+        font-size: 8vw; /* Increase font size for smaller screens */
+        margin: 0 5%; /* Adjust margins for smaller screens */
+    }
+
+    .credits {
+        font-size: 0.8em; /* Smaller font size for credits */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust heading size for mobile */
+    }
 }
