@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Timer</title>
-    <link id="theme-stylesheet" rel="stylesheet" href="style.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
 </head>
 
 <body>
@@ -15,13 +15,15 @@
         <h1 class="countdown-title">Countdown Timer</h1>
         <a data-type="countdown" data-id="7140593" class="tickcounter" aria-label="Countdown Timer" title="Jihawi" href="//www.tickcounter.com/">Jihawi</a>
     </div>
+    
     <div class="theme-switcher">
-        <button onclick="switchTheme('blue')">Blue Theme</button>
-        <button onclick="switchTheme('dark')">Dark Theme</button>
-        <button onclick="switchTheme('pink')">Pink Theme</button>
-        <button onclick="switchTheme('gold')">Golden Theme</button>
+        <button class="blue" onclick="switchTheme('blue')">Blue Theme</button>
+        <button class="dark" onclick="switchTheme('dark')">Dark Theme</button>
+        <button class="pink" onclick="switchTheme('pink')">Pink Theme</button>
+        <button class="gold" onclick="switchTheme('gold')">Golden Theme</button>
     </div>
-    <script src="script.js"></script>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 
 </html>
