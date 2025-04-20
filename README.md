@@ -1,1 +1,1 @@
-a countdown for a the Jihawi's date
+a countdown for my finals 2025
