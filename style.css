@@ -41,7 +41,7 @@ body {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #43468e; /* Darker blue for heading */
-    
+
 }
 
 /* TickCounter Link Styles */
@@ -110,6 +110,16 @@ body {
 
 .theme-switcher button.gold:hover {
     background-color: #ffc107; /* Darker gold on hover */
+}
+
+/* Green Theme Button */
+.theme-switcher button.green {
+    background-color: #7ca070; /* Green background */
+    color: black; /* Black text */
+}
+
+.theme-switcher button.green:hover {
+    background-color: #546d4c; /* Darker green on hover */
 }
 
 /* Media Queries for Mobile Devices */
