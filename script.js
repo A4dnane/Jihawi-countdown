@@ -27,7 +27,10 @@ function switchTheme(theme) {
             themeStylesheet.setAttribute('href', 'pink-theme.css');
             break;
         case 'gold':
-            themeStylesheet.setAttribute('href', 'golden-theme.css'); // Add your gold theme CSS file
+            themeStylesheet.setAttribute('href', 'golden-theme.css');
+            break;
+        case 'green':
+            themeStylesheet.setAttribute('href', 'green-theme.css');
             break;
         default:
             themeStylesheet.setAttribute('href', 'style.css');
