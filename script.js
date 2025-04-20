@@ -8,31 +8,37 @@
 }(document, "script", "tickcounter-sdk"));
 
 function switchTheme(theme) {
-  const themeStylesheet = document.getElementById('theme-stylesheet');
+    const themeStylesheet = document.getElementById('theme-stylesheet');
+    const countdownElement = document.getElementById('countdown'); // Assuming your countdown has this ID
 
-  switch (theme) {
-      case 'blue':
-          themeStylesheet.setAttribute('href', 'style.css');
-          break;
-      case 'dark':
-          themeStylesheet.setAttribute('href', 'dark-theme.css');
-          break;
-      case 'pink':
-          themeStylesheet.setAttribute('href', 'pink-theme.css');
-          break;
-      case 'gold':
-          themeStylesheet.setAttribute('href', 'golden-theme.css');
-          break;
-      default:
-          themeStylesheet.setAttribute('href', 'style.css');
-  }
+    if (!themeStylesheet) {
+        console.error("Theme stylesheet element not found!");
+        return;
+    }
 
-  // Save the selected theme to localStorage
-  localStorage.setItem('theme', theme);
+    switch (theme) {
+        case 'blue':
+            themeStylesheet.setAttribute('href', 'style.css');
+            break;
+        case 'dark':
+            themeStylesheet.setAttribute('href', 'dark-theme.css');
+            break;
+        case 'pink':
+            themeStylesheet.setAttribute('href', 'pink-theme.css');
+            break;
+        case 'gold':
+            themeStylesheet.setAttribute('href', 'gold-theme.css'); // Add your gold theme CSS file
+            break;
+        default:
+            themeStylesheet.setAttribute('href', 'style.css');
+    }
+
+    // Save the selected theme to localStorage
+    localStorage.setItem('theme', theme);
 }
 
 // Load the saved theme on page load
 window.onload = function() {
-  const savedTheme = localStorage.getItem('theme') || 'blue';
-  switchTheme(savedTheme);
+    const savedTheme = localStorage.getItem('theme') || 'blue';
+    switchTheme(savedTheme);
 };
